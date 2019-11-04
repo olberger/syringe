@@ -59,6 +59,13 @@ func (s *MockAPIServer) GetLiveLesson(ctx context.Context, uuid *pb.LessonUUID) 
 				},
 				Host: "webserver1",
 			},
+			"desktop": {
+				Name: "desktop",
+				Presentations: []*pb.Presentation{
+					{Name: "vnc", Port: 5900, Type: "vnc"},
+				},
+				Host: "desktop",
+			},
 		},
 		LessonStage:      1,
 		LabGuide:         "foobar",

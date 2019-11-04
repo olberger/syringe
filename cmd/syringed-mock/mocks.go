@@ -40,6 +40,13 @@ endpoints:
     port: 80
     type: http
 
+- name: desktop
+  image: antidote/desktop
+  presentations:
+  - name: vnc
+    port: 5900
+    type: vnc
+
 stages:
 - id: 0
   description: This is a code smell you really should fix this
