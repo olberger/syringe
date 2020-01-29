@@ -30,6 +30,12 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	
+	var lti *pb.LtiMes
+	err = yaml.Unmarshal([]byte(ltiRaw), &lti)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	apiServer := &MockAPIServer{
 		Lessons: []*pb.Lesson{
@@ -38,6 +44,7 @@ func main() {
 		Collections: []*pb.Collection{
 			collection,
 		},
+        Lti: lti,
 	}
 	err = apiServer.StartAPI(syringeConfig)
 	if err != nil {

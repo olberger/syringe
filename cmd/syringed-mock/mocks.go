@@ -12,6 +12,9 @@ longDescription: big long description that in no way is fake or made up. No sir.
 type: vendor
 tier: prod`
 
+    ltiRaw = `---
+name: None`
+
 	lessonRaw = `---
 lessonName: Antidote Test Lesson
 lessonId: 1

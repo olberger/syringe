@@ -8,6 +8,7 @@ declare -a protos=(
     'syringeinfo.proto'
     'curriculum.proto'
     'syringeinfo.proto'
+    'lti.proto'
 );
 
 for i in "${protos[@]}"

@@ -1,0 +1,22 @@
+syntax = "proto3";
+package syringe.api.exp;
+
+import "google/api/annotations.proto";
+import "validate/validate.proto";
+
+service LtiService {
+
+  rpc LtiTest(LtiFilter) returns (LtiMes) {
+    option (google.api.http) = {
+      get: "/exp/lti"
+    };
+  }
+
+}
+
+message LtiFilter {}
+
+
+message LtiMes {
+    string Name = 1;
+}

@@ -1103,6 +1103,52 @@ Livelesson = `{
   }
 }
 `
+Lti = `{
+  "swagger": "2.0",
+  "info": {
+    "title": "lti.proto",
+    "version": "version not set"
+  },
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/exp/lti": {
+      "get": {
+        "operationId": "LtiTest",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/expmes"
+            }
+          }
+        },
+        "tags": [
+          "LtiService"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "expmes": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
+`
 Syringeinfo = `{
   "swagger": "2.0",
   "info": {

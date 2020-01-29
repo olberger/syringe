@@ -108,3 +108,8 @@ func (s *MockAPIServer) ListCollections(ctx context.Context, filter *pb.Collecti
 func (s *MockAPIServer) GetCollection(ctx context.Context, filter *pb.CollectionID) (*pb.Collection, error) {
 	return s.Collections[0], nil
 }
+
+
+func (s *MockAPIServer) LtiTest(ctx context.Context, filter *pb.LtiFilter) (*pb.LtiMes, error) {
+	return s.Lti, nil
+}
