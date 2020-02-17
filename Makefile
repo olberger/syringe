@@ -39,7 +39,7 @@ compile:
 
 docker:
 	docker build -t antidotelabs/syringe:$(TARGET_VERSION) .
-# 	docker push antidotelabs/syringe:$(TARGET_VERSION)
+ 	docker push antidotelabs/syringe:$(TARGET_VERSION)
 
 test: 
 	@go test ./api/... ./cmd/... ./config/... ./scheduler/... -cover -coverprofile=coverage.out
