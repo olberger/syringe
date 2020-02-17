@@ -25,7 +25,7 @@ import (
 
 	gw "github.com/nre-learning/syringe/api/exp/generated"
     
-    "lti"
+    lti "github.com/jordic/lti"
     "flag"
 )
 
