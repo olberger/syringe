@@ -2,6 +2,8 @@
 
 ## In development
 
+- LTI integration POC, contributed by Mathieu Aouizerate and Youssef
+  Jaouhari (Telecom SudParis student project)
 
 ## v0.5.1 - February 17, 2020
 
